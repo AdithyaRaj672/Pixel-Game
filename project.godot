@@ -25,52 +25,36 @@ run/main_scene="res://scenes/menus/main_menu.tscn"
 [input]
 
 accelerate={
-"events": [{
-"action": "accelerate",
-"input": "%s/w"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":87,"physical_keycode":0,"key_label":0,"unicode":119,"location":0,"echo":false,"script":null)])
 }
 brake={
-"events": [{
-"action": "brake",
-"input": "%s/s"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":83,"physical_keycode":0,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)])
 }
 shift_up={
-"events": [{
-"action": "shift_up",
-"input": "%s/d"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":68,"physical_keycode":0,"key_label":0,"unicode":100,"location":0,"echo":false,"script":null)])
 }
 shift_down={
-"events": [{
-"action": "shift_down",
-"input": "%s/a"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":65,"physical_keycode":0,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)])
 }
 nitrous={
-"events": [{
-"action": "nitrous",
-"input": "%s/space"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)])
 }
 pause={
-"events": [{
-"action": "pause",
-"input": "%s/escape"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194305,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)])
 }
 menu_confirm={
-"events": [{
-"action": "menu_confirm",
-"input": "%s/enter"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)])
 }
 menu_back={
-"events": [{
-"action": "menu_back",
-"input": "%s/backspace"
-}]
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventKey,"device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194308,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)])
 }
 
 [rendering]
