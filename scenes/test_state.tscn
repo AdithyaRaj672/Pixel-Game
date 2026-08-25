@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[node name="TestStateContainer" type="Panel" node_position="0,0"]
+script="res://scripts/core/test_state_navigation.gd"
+anchors_preset=15
+offset_right=100.0
+offset_bottom=100.0
+anchors_delegate=11
+grow_horizontal=2
+grow_vertical=2
+theme_type_variation="PanelContainer"
+
+[node name="TestLabel" type="Label" parent="TestStateContainer"]
+anchors_preset=15
+offset_right=100.0
+offset_bottom=100.0
+anchors_delegate=11
+grow_horizontal=2
+grow_vertical=2
+text="Phase 0 Test State - Navigation Verification"
+horizontal_alignment=1
+vertical_alignment=1
+
+[node name="ReturnButton" type="Button" parent="TestStateContainer"]
+custom_minimum_size="200,50"
+offset_top=50.0
+offset_bottom=50.0
+text="Return to Main Menu"

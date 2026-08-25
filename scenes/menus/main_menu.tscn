@@ -1,0 +1,35 @@
+[gd_scene format=3]
+
+[node name="BackgroundPanel" type="Panel" node_position="0,0"]
+anchors_preset=15
+offset_right=100.0
+offset_bottom=100.0
+anchors_delegate=11
+grow_horizontal=2
+grow_vertical=2
+theme_type_variation="PanelContainer"
+script="res://scripts/core/main_navigation.gd"
+
+[node name="MenuVBox" type="VBoxContainer" parent="BackgroundPanel"]
+anchors_preset=15
+offset_right=100.0
+offset_bottom=100.0
+anchors_delegate=11
+grow_horizontal=2
+grow_vertical=2
+alignment=1
+
+[node name="TitleLabel" type="Label" parent="MenuVBox"]
+custom_minimum_size="300,80"
+text="PIXEL GAME"
+horizontal_alignment=1
+vertical_alignment=1
+uppercase=true
+
+[node name="StartButton" type="Button" parent="MenuVBox"]
+custom_minimum_size="200,50"
+text="Start Phase 0 Test State"
+
+[node name="QuitButton" type="Button" parent="MenuVBox"]
+custom_minimum_size="200,50"
+text="Quit"

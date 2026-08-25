@@ -1,0 +1,107 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/features=PackedStringArray("4.7")
+
+[configuration]
+
+config_version=5
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+run/main_scene="res://scenes/menus/main_menu.tscn"
+
+[input]
+
+accelerate={
+"events": [{
+"action": "accelerate",
+"input": "%s/w"
+}]
+}
+brake={
+"events": [{
+"action": "brake",
+"input": "%s/s"
+}]
+}
+shift_up={
+"events": [{
+"action": "shift_up",
+"input": "%s/d"
+}]
+}
+shift_down={
+"events": [{
+"action": "shift_down",
+"input": "%s/a"
+}]
+}
+nitrous={
+"events": [{
+"action": "nitrous",
+"input": "%s/space"
+}]
+}
+pause={
+"events": [{
+"action": "pause",
+"input": "%s/escape"
+}]
+}
+menu_confirm={
+"events": [{
+"action": "menu_confirm",
+"input": "%s/enter"
+}]
+}
+menu_back={
+"events": [{
+"action": "menu_back",
+"input": "%s/backspace"
+}]
+}
+
+[rendering]
+
+renderer=2
+
+[rendering ENVIRONMENT]
+
+background_mode=4
+
+[rendering environment]
+
+background_mode=4
+
+[rendering environment sky]
+
+origin=0
+
+[rendering options]
+
+filter_2d=0
+
+[rendering options textures]
+
+tex_mipmap_anisotropic=1
+
+[rendering options textures filtering]
+
+nearest_mipmap_linear=1
+anisotropy=1
+
+[rendering viewport]
+
+usage_2d=0

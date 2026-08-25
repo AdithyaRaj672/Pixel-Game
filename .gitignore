@@ -1,0 +1,45 @@
+# Godot 4.x .gitignore
+
+# Godot specific files
+.godot/
+
+# VSCode files
+.vscode/
+
+# system files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+
+# Project-specific assets (to be populated)
+!assets/cars/*.tres
+!assets/cars/*.tscn
+!assets/environments/*.tres
+!assets/environments/*.tscn
+!assets/ui/*.tres
+!assets/ui/*.tscn
+!assets/audio/*.wav
+!assets/audio/*.ogg
+!assets/audio/*.mp3
+
+# Data files (to be populated)
+!data/cars/*.json
+!data/cars/*.tres
+!data/upgrades/*.json
+!data/upgrades/*.tres
+!data/events/*.json
+!data/events/*.tres
+!data/tuning/*.json
+!data/tuning/*.tres
+
+# Compiled GDNative libraries (ignore binaries in vendor directories)
+vendor/
+
+# Temporary files
+*.tmp
+*.log
+
+# Distribution folders
+dist/
