@@ -1,35 +1,35 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://dt3eo3sdkg267"]
 
-[node name="BackgroundPanel" type="Panel" node_position="0,0"]
-anchors_preset=15
-offset_right=100.0
-offset_bottom=100.0
-anchors_delegate=11
-grow_horizontal=2
-grow_vertical=2
-theme_type_variation="PanelContainer"
-script="res://scripts/core/main_navigation.gd"
+[ext_resource type="Script" uid="uid://bndufwf55eqn7" path="res://scripts/core/main_navigation.gd" id="1_xqga4"]
 
-[node name="MenuVBox" type="VBoxContainer" parent="BackgroundPanel"]
-anchors_preset=15
-offset_right=100.0
-offset_bottom=100.0
-anchors_delegate=11
-grow_horizontal=2
-grow_vertical=2
-alignment=1
+[node name="BackgroundPanel" type="Panel" unique_id=561788953]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"PanelContainer"
+script = ExtResource("1_xqga4")
 
-[node name="TitleLabel" type="Label" parent="MenuVBox"]
-custom_minimum_size="300,80"
-text="PIXEL GAME"
-horizontal_alignment=1
-vertical_alignment=1
-uppercase=true
+[node name="MenuVBox" type="VBoxContainer" parent="." unique_id=1127038290]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
 
-[node name="StartButton" type="Button" parent="MenuVBox"]
-custom_minimum_size="200,50"
-text="Start Phase 0 Test State"
+[node name="TitleLabel" type="Label" parent="MenuVBox" unique_id=449915160]
+layout_mode = 2
+text = "PIXEL GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
 
-[node name="QuitButton" type="Button" parent="MenuVBox"]
-custom_minimum_size="200,50"
-text="Quit"
+[node name="StartButton" type="Button" parent="MenuVBox" unique_id=957933645]
+layout_mode = 2
+text = "Start Phase 0 Test State"
+
+[node name="QuitButton" type="Button" parent="MenuVBox" unique_id=983722695]
+layout_mode = 2
+text = "Quit"

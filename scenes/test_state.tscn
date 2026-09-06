@@ -1,28 +1,36 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://x1txkp40qlk5"]
 
-[node name="TestStateContainer" type="Panel" node_position="0,0"]
-script="res://scripts/core/test_state_navigation.gd"
-anchors_preset=15
-offset_right=100.0
-offset_bottom=100.0
-anchors_delegate=11
-grow_horizontal=2
-grow_vertical=2
-theme_type_variation="PanelContainer"
+[ext_resource type="Script" uid="uid://c0787im6vf02a" path="res://scripts/core/test_state_navigation.gd" id="1_gjqor"]
 
-[node name="TestLabel" type="Label" parent="TestStateContainer"]
-anchors_preset=15
-offset_right=100.0
-offset_bottom=100.0
-anchors_delegate=11
-grow_horizontal=2
-grow_vertical=2
-text="Phase 0 Test State - Navigation Verification"
-horizontal_alignment=1
-vertical_alignment=1
+[node name="TestStateContainer" type="Panel" unique_id=890462772]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"PanelContainer"
+script = ExtResource("1_gjqor")
 
-[node name="ReturnButton" type="Button" parent="TestStateContainer"]
-custom_minimum_size="200,50"
-offset_top=50.0
-offset_bottom=50.0
-text="Return to Main Menu"
+[node name="TestLabel" type="Label" parent="." unique_id=1124375368]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Phase 0 Test State - Navigation Verification"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnButton" type="Button" parent="." unique_id=1081397293]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 100.0
+offset_right = 100.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Return to Main Menu"

@@ -4,9 +4,11 @@ extends Node
 # No global GameManager needed - just navigation
 
 func _ready() -> void:
+    print("MAIN NAVIGATION READY")
+    
     # Connect button signals
-    var start_button = $BackgroundPanel/MenuVBox/StartButton
-    var quit_button = $BackgroundPanel/MenuVBox/QuitButton
+    var start_button = $MenuVBox/StartButton
+    var quit_button = $MenuVBox/QuitButton
 
     start_button.pressed.connect(_on_start_button_pressed)
     quit_button.pressed.connect(_on_quit_button_pressed)
